@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXCUSE ME  1</title>
+ </head>
+ <body>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Excuse Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Excuse Generator</h1>
+
+    <!-- Textarea for user to type situation -->
+    <textarea id="situation" placeholder="Enter your situation..."></textarea>
+
+    <!-- Button user clicks to generate excuse -->
+    <button id="generateBtn">Generate Excuse</button>
+
+    <!-- Container where generated excuse will appear -->
+    <div id="excuseContainer" class="hidden">
+      <p id="excuseText"></p>
+      <button id="playBtn">🔊 Play Voice</button>
+    </div>
+
+    <!-- Buttons for copy, save, feedback -->
+    <div id="userActions" class="hidden">
+      <button id="copyBtn">📋 Copy Excuse</button>
+      <button id="saveBtn">⭐ Save Excuse</button>
+      <div id="feedback">
+        Was this convincing?
+        <button id="likeBtn">👍</button>
+        <button id="dislikeBtn">👎</button>
+      </div>
+
+      <!-- Recent excuses list -->
+      <div id="recentExcusesContainer" class="hidden">
+        <h4>🕒 Recent Excuses:</h4>
+        <ul id="recentExcusesList"></ul>
+      </div>
+
+      <!-- Saved excuses list -->
+      <div id="savedExcusesContainer" class="hidden">
+        <h4>⭐ Saved Excuses:</h4>
+        <ul id="savedExcusesList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+  
+ </body>
+ </html>
