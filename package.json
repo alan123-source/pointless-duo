@@ -1,0 +1,20 @@
+{
+  "name": "pointless-duo",
+  "version": "1.0.0",
+  "description": "<img width=\"3188\" height=\"1202\" alt=\"frame (3)\" src=\"https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7\" />",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alan123-source/pointless-duo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alan123-source/pointless-duo/issues"
+  },
+  "homepage": "https://github.com/alan123-source/pointless-duo#readme"
+}
