@@ -151,7 +151,7 @@
               <li class="p-4 bg-white rounded-lg shadow-md flex justify-between items-start">
                 <span class="italic flex-grow">${excuse}</span>
                 <div class="flex space-x-2 ml-4">
-                  <button class="save-btn bg-yellow-500 text-white font-semibold py-1 px-2 rounded-full text-sm hover:bg-yellow-600 transition-colors play-btn" data-excuse="${excuse}">⭐</button>
+                  <button class="save-btn bg-yellow-500 text-white font-semibold py-1 px-2 rounded-full text-sm hover:bg-yellow-600 transition-colors " data-excuse="${excuse}">⭐</button>
                   <button class="copy-btn bg-green-500 text-white font-semibold py-1 px-2 rounded-full text-sm hover:bg-green-600 transition-colors" data-excuse="${excuse}">📋</button>
                   <button class="play-btn bg-gray-200 text-gray-800 font-semibold py-1 px-2 rounded-full text-sm hover:bg-gray-300 transition-colors" data-excuse="${excuse}">🔊</button>
                 </div>
