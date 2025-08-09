@@ -1,63 +1,74 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EXCUSE ME  1</title>
- </head>
- <body>
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Excuse Generator</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- Load Tailwind CSS from a CDN for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./script.js"></script>
+  <style>
+    /* Custom styles for the app */
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    .hidden {
+      display: none !important;
+    }
+    /* Simple styling for the message box, always on top */
+    #messageBox {
+      position: fixed;
+      top: 1rem;
+      left: 50%;
+      transform: translate(-50%, -150%);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      z-index: 100;
+      opacity: 0;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    #messageBox.visible {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+  </style>
 </head>
-<body>
-  <div class="container">
-    <h1>Excuse Generator</h1>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
 
+  <!-- Main Container -->
+  <div class="container bg-white p-8 rounded-2xl shadow-xl max-w-lg w-full text-center">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">Excuse Generator</h1>
+
+    <!-- Custom Message Box for alerts (now a fixed element) -->
+    <div id="messageBox" class="p-4 rounded-lg shadow-lg text-white font-semibold"></div>
+    
     <!-- Textarea for user to type situation -->
-    <textarea id="situation" placeholder="Enter your situation..."></textarea>
+    <textarea id="situation" class="w-full h-32 p-4 rounded-lg border-2 border-gray-300 focus:border-blue-500 focus:outline-none transition-colors duration-200 resize-none mb-6 text-gray-700" placeholder="Enter your situation here (e.g., 'I was late for a meeting because...')"></textarea>
 
-    <!-- Button user clicks to generate excuse -->
-    <button id="generateBtn">Generate Excuse</button>
+    <!-- Button to generate excuse -->
+    <button id="generateBtn" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105">
+      Generate Excuse
+    </button>
 
-    <!-- Container where generated excuse will appear -->
-    <div id="excuseContainer" class="hidden">
-      <p id="excuseText"></p>
-      <button id="playBtn">🔊 Play Voice</button>
+    <!-- Container where generated excuses will appear -->
+    <div id="excuseContainer" class="mt-8 hidden">
+        <h3 class="text-2xl font-semibold mb-4">Generated Excuses:</h3>
+        <ul id="excusesList" class="p-6 bg-blue-50 text-blue-900 rounded-xl shadow-inner border border-blue-200 space-y-3 text-left"></ul>
     </div>
 
-    <!-- Buttons for copy, save, feedback -->
-    <div id="userActions" class="hidden">
-      <button id="copyBtn">📋 Copy Excuse</button>
-      <button id="saveBtn">⭐ Save Excuse</button>
-      <div id="feedback">
-        Was this convincing?
-        <button id="likeBtn">👍</button>
-        <button id="dislikeBtn">👎</button>
-      </div>
+    <!-- Recent excuses list -->
+    <div id="recentExcusesContainer" class="mt-8 text-left bg-gray-50 p-6 rounded-lg shadow-inner hidden">
+      <h4 class="text-xl font-bold text-gray-800 mb-4">🕒 Recent Excuses:</h4>
+      <ul id="recentExcusesList" class="list-disc list-inside space-y-2 text-gray-700"></ul>
+    </div>
 
-      <!-- Recent excuses list -->
-      <div id="recentExcusesContainer" class="hidden">
-        <h4>🕒 Recent Excuses:</h4>
-        <ul id="recentExcusesList"></ul>
-      </div>
-
-      <!-- Saved excuses list -->
-      <div id="savedExcusesContainer" class="hidden">
-        <h4>⭐ Saved Excuses:</h4>
-        <ul id="savedExcusesList"></ul>
-      </div>
+    <!-- Saved excuses list -->
+    <div id="savedExcusesContainer" class="mt-8 text-left bg-gray-50 p-6 rounded-lg shadow-inner hidden">
+      <h4 class="text-xl font-bold text-gray-800 mb-4">⭐ Saved Excuses:</h4>
+      <ul id="savedExcusesList" class="list-disc list-inside space-y-2 text-gray-700"></ul>
     </div>
   </div>
 
-  <!-- Link to JavaScript file -->
-  <script src="script.js"></script>
+  
 </body>
 </html>
-
-  
- </body>
- </html>

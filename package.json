@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/alan123-source/pointless-duo/issues"
   },
-  "homepage": "https://github.com/alan123-source/pointless-duo#readme"
+  "homepage": "https://github.com/alan123-source/pointless-duo#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.4.0"
+  }
 }
