@@ -5,30 +5,30 @@
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: pointless-duo
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead:Alan paul john- college of engineering poonjar
+- Member 2:Amal sunny -college of engineering poonjar
+
 
 ### Project Description
-[2-3 lines about what your project does]
+An excuse generator which gives excueses according to your situation you have given
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+lack of excuses
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+we made a website for that
 
-## Technical Details
+## Technical Details 
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- html,css,js
+- tailwind
+- nothing
+- gemini ,chatgpt
 
 For Hardware:
 - [List main components]
@@ -47,18 +47,22 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Excuse Generator Screenshot](./asset/Screenshot%202025-08-09%20154111.png.png)
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+the first image
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+
+
+![Screenshot2](./asset/Screenshot%202025-08-09%20154141.png)
+*shows the generated excuses*
+
+
+![Screenshot3](./asset/Screenshot%202025-08-09%20154343.png)
+*shows the saved messages*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+*shows 5 excuses generated which have the features of saving the excuse and adding it to clipboard*
 
 For Hardware:
 
@@ -88,9 +92,8 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- amal sunny - organised,planned and given the valuable ideas for this project
+- alan paul john  setup  html css javascript and tailwind
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
